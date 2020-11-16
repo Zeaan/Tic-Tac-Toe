@@ -13,6 +13,11 @@ import javax.swing.JOptionPane;
  * @author zeaan
  */
 public class Tic_Tac_Toe extends javax.swing.JFrame {
+/*We are setting click initially at 0. Click is used to keep track of whose turn it is.
+Whenever a button is clicked, click is incremented. We are assuming that O goes first (in which click=0) and then X (click=1), 
+and then again O (click=2) and again X (click=3) and so on. 
+This means that click is always even number for O and odd number for X. 
+*/
 int click;
     public Tic_Tac_Toe() {
         initComponents();
